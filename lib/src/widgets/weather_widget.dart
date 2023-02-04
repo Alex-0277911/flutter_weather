@@ -24,7 +24,7 @@ class WeatherWidget extends StatelessWidget {
             style: TextStyle(
               fontSize: 25,
               letterSpacing: 5,
-              color: appTheme.accentColor,
+              color: appTheme.colorScheme.secondary,
               fontWeight: FontWeight.w900,
             ),
           ),
@@ -35,20 +35,20 @@ class WeatherWidget extends StatelessWidget {
               fontSize: 15,
               letterSpacing: 5,
               fontWeight: FontWeight.w100,
-              color: appTheme.accentColor,
+              color: appTheme.colorScheme.secondary,
             ),
           ),
           WeatherSwipePager(weather: weather),
           Padding(
             child: Divider(
-              color: appTheme.accentColor.withAlpha(50),
+              color: appTheme.colorScheme.secondary.withAlpha(50),
             ),
             padding: EdgeInsets.all(10),
           ),
           ForecastHorizontal(weathers: weather.forecast),
           Padding(
             child: Divider(
-              color: appTheme.accentColor.withAlpha(50),
+              color: appTheme.colorScheme.secondary.withAlpha(50),
             ),
             padding: EdgeInsets.all(10),
           ),
@@ -62,7 +62,8 @@ class WeatherWidget extends StatelessWidget {
                 height: 30,
                 color: AppStateContainer.of(context)
                     .theme
-                    .accentColor
+                    .colorScheme
+                    .secondary
                     .withAlpha(50),
               )),
             ),
@@ -78,7 +79,8 @@ class WeatherWidget extends StatelessWidget {
                 height: 30,
                 color: AppStateContainer.of(context)
                     .theme
-                    .accentColor
+                    .colorScheme
+                    .secondary
                     .withAlpha(50),
               )),
             ),
@@ -94,7 +96,8 @@ class WeatherWidget extends StatelessWidget {
                 height: 30,
                 color: AppStateContainer.of(context)
                     .theme
-                    .accentColor
+                    .colorScheme
+                    .secondary
                     .withAlpha(50),
               )),
             ),

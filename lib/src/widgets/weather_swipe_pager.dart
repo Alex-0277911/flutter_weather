@@ -44,9 +44,10 @@ class WeatherSwipePager extends StatelessWidget {
               activeSize: 5,
               color: AppStateContainer.of(context)
                   .theme
-                  .accentColor
+                  .colorScheme
+                  .secondary
                   .withOpacity(0.4),
-              activeColor: appTheme.accentColor),
+              activeColor: appTheme.colorScheme.secondary),
         ),
       ),
     );

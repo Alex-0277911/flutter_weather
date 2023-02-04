@@ -25,7 +25,8 @@ class ValueTile extends StatelessWidget {
           style: TextStyle(
               color: AppStateContainer.of(context)
                   .theme
-                  .accentColor
+                  .colorScheme
+                  .secondary
                   .withAlpha(80)),
         ),
         SizedBox(
@@ -34,7 +35,7 @@ class ValueTile extends StatelessWidget {
         this.iconData != null
             ? Icon(
                 iconData,
-                color: appTheme.accentColor,
+                color: appTheme.colorScheme.secondary,
                 size: 20,
               )
             : EmptyWidget(),
@@ -43,7 +44,7 @@ class ValueTile extends StatelessWidget {
         ),
         Text(
           this.value,
-          style: TextStyle(color: appTheme.accentColor),
+          style: TextStyle(color: appTheme.colorScheme.secondary),
         ),
       ],
     );

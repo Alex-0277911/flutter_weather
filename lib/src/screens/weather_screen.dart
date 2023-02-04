@@ -59,7 +59,7 @@ class _WeatherScreenState extends State<WeatherScreen>
               Text(
                 DateFormat('EEEE, d MMMM yyyy').format(DateTime.now()),
                 style: TextStyle(
-                  color: appTheme.accentColor.withAlpha(80),
+                  color: appTheme.colorScheme.secondary.withAlpha(80),
                   fontSize: 14,
                 ),
               )
@@ -69,7 +69,7 @@ class _WeatherScreenState extends State<WeatherScreen>
             PopupMenuButton<OptionsMenu>(
                 child: Icon(
                   Icons.more_vert,
-                  color: appTheme.accentColor,
+                  color: appTheme.colorScheme.secondary,
                 ),
                 onSelected: this._onOptionMenuItemSelected,
                 itemBuilder: (context) => <PopupMenuEntry<OptionsMenu>>[
@@ -129,7 +129,7 @@ class _WeatherScreenState extends State<WeatherScreen>
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                          primary: appTheme.accentColor,
+                          foregroundColor: appTheme.colorScheme.secondary,
                           elevation: 1,
                         ),
                         child: Text("Try Again"),
@@ -167,7 +167,7 @@ class _WeatherScreenState extends State<WeatherScreen>
               TextButton(
                 child: Text('ok'),
                 style: TextButton.styleFrom(
-                  primary: appTheme.accentColor,
+                  foregroundColor: appTheme.colorScheme.secondary,
                   elevation: 1,
                 ),
                 onPressed: () {
@@ -266,7 +266,7 @@ class _WeatherScreenState extends State<WeatherScreen>
               TextButton(
                 child: Text('Enable!'),
                 style: TextButton.styleFrom(
-                  primary: appTheme.accentColor,
+                  foregroundColor: appTheme.colorScheme.secondary,
                   elevation: 1,
                 ),
                 onPressed: () {
